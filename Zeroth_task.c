@@ -32,9 +32,9 @@ int main()
     printf("The compartion of str1 and str2: %d\n", strcmp(str1,str2));
     strcpy(str1,str2);
     printf("The compartion of str1 and str2: %d\n", strcmp(str1,str2));
-
+/*
     char str3[62];
-    for(int i=0; i<strlen(str1); i++){
+    for(int i=0; i<10; i++){
         str3[i]=str1[i];
     }
     for(int i=strlen(str1); i<strlen(str2); i++){
@@ -47,6 +47,6 @@ int main()
     {
         printf("%dth letter='%c', code=%d\n", i, str1[i], str2[i]);
     } 
-    
+*/
     return 0;
 }
