@@ -26,6 +26,27 @@ int main()
     {
         printf("%dth letter='%c', code=%d\n", i, str1[i], str2[i]);
     }
+    int n = strlen(str1);
+    printf("The length of str1: %d\n", n);
+    printf("The length of str2: %lu\n", strlen(str2));
+    printf("The compartion of str1 and str2: %d\n", strcmp(str1,str2));
+    strcpy(str1,str2);
+    printf("The compartion of str1 and str2: %d\n", strcmp(str1,str2));
 
+    char str3[62];
+    for(int i=0; i<strlen(str1); i++){
+        str3[i]=str1[i];
+    }
+    for(int i=strlen(str1); i<strlen(str2); i++){
+        str3[i]=str2[i];
+    }
+
+    char str4[62];
+    strcat(str1, str2);
+    for (int i = 0; i < 62; i++)
+    {
+        printf("%dth letter='%c', code=%d\n", i, str1[i], str2[i]);
+    } 
+    
     return 0;
 }
